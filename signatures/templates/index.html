@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Signature verified</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <style>
+      .allinfo {
+        background-color:#ffeeac38;
+      }
+      .text-anemia h1 {
+        color: #010f53;
+        font-family: "acumin-pro", sans-serif;
+        font-size: 5rem;
+        font-weight: bold;
+        line-height: 45px;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+      }
+      .predict{
+        padding: 3%;
+      }
+  
+      .image {
+        width: 45vw; /* Adjust the width as needed */
+        margin-right: 40px;
+      }
+  
+      .text {
+          font-size: 3.58rem;
+          line-height: 1.5;
+      }
+      .container {
+        display: flex;
+      }
+  
+      .left-column {
+        flex: 1;
+      }
+  
+      .right-column {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
+  
+      .right-row {
+        flex: 1;
+      }
+      #image-preview{
+        display: flex;
+        align-items: center;
+        justif-content: center;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body style="background-color: #ffeeac38;">
+    <!--Navbar section start-->
+    <header id="full_nav">
+      <div class="header">
+        <div class="container">
+          <nav
+            class="navbar navbar-expand-lg bg-dark fixed-top end"
+            data-bs-theme="dark"
+          >
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"> SIGNATURE VERIFICATION </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div
+                class="collapse navbar-collapse justify-content-end"
+                id="navbarNavAltMarkup"
+              >
+                <div class="navbar-nav" style="font-size: 20px">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                  <a class="nav-link" href="#verify">VERIFICATION</a>
+                  <a class="nav-link" href="#sign-forg">Signature Foreries</a>
+                  <a class="nav-link" href="#">ML Model</a>
+                  <a class="nav-link" href="#">ABOUT</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!--Navbar section exit-->
+
+    <div class="allinfo" style="padding-top: 5.5%;padding-left: 2%;padding-right: 7.5%;">
+   
+ <!--BODY-HEADER-ANEMIA-->
+      <div class="container" style="margin-left: 58px!important">
+        <div class="left-column">
+           <img class="image" src="https://images.unsplash.com/photo-1627518788331-b3b7fdaa382f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1925&q=80" alt="Image">
+        </div>
+        <div class="right-column">
+           <div class="right-row text-anemia">
+            <h1>SIGNATURE  </h1><br><h1>  VERIFICATION</h1>
+            <br>
+           </div>
+            <div class="right-row">
+                <br>
+            <p style="padding: 13px; font-size: 1.5rem">
+                <br>
+            Verifying signatures based on inserted images involves a comprehensive analysis of visual elements, leveraging advanced algorithms and image processing techniques. This approach combines objective measurements with human judgment to determine the legitimacy of a signature, contributing to enhanced security and accuracy in various fields.
+            </p>
+           </div> 
+        </div>
+      </div>
+ <!--BODY-HEADER-ANEMIA-->
+        
+      
+ <!--predict-->
+    
+   <div class="main-bodycontent" style="margin: 5vw 9vh">
+     
+      <div class="text-anemia">
+          
+          <p class="text" id="verify">PREDICT SIGNATURE ACCURACY</p>
+          <div class="container">
+            <div class="left-column">
+              <!--data + form +result-->
+              <p  style="display:justif-content; font-size:1.5rem;">Insert an image and find out
+                about the accuracy of the signatures. Based on the analysis of various factors, 
+                tests,predicted data and muc more reports analysis, we provide the verification of uploaded signatures</p>
+                  <!--form-->
+            <form class="row g-3 text-center" action="/"  , method="post" enctype="multipart/form-data"  >
+              <div class="col-auto">
+                  <label for="nameInput">Name:</label>
+                  <input type="text" class="form-control" id="nameInput" placeholder="Enter your name">
+                  <br>
+                  <input class="form-control " type="file" name="imagefile"  id="image-input"  />
+                  </div>
+             
+               <div class="row">
+                  <div class="col-auto" style="margin-left:15%">
+                    <input
+                      class="btn btn-primary mt-3"
+                      type="submit"
+                      value="predict image"
+                    />
+                   </div>
+                </div>
+            
+              </form>
+            </div>
+            <div class="right-column">
+              <!--result+img preview -->
+           
+                   <!--image preview-->
+             <div>
+              <img id="image-preview"  >
+            </div>
+            </div>
+          </div>
+             <!--predict main info - no chnges-->
+             <div class="">
+              {% if prediction %}
+              <br>
+              <p style="font-size:1.8rem;text-style:bold;color: #7f2b2b;padding:1.5em;margin-left:15vw;">Probabilty of signatures being forged is   {{prediction}}%</p>
+              
+              {% endif %}
+            </div>
+
+        
+       
+         <!--form ending -->
+
+          <div class="rbc-data" style="padding-left: 5vw">
+            <section id="sign-forg" >
+            <!--all text data-->
+            
+                <h2 style="color: #0d0187;font-size: 2.6rem;" >Types of signature forgeries:</h2>
+                <p>
+                    The physical act of signing a signature requires coordinating the brain, eyes, arms, fingers, muscles, and nerves. Considering all factors in play, it’s no wonder that people don’t sign their name exactly the same every time: some elements may be omitted or altered. Personality, emotional state, health, age, conditions under which the individual signs, space available for the signature and many other factors all influence signature-to-signature deviations.
+                  <ol>  
+                    <li> Random/Blind forgery — Typically has little or no similarity to the genuine signatures. This type of forgery is created when the forger has no access to the authentic signature.</li>
+                    <br>
+                    <li> Unskilled (Trace-over) Forgery: The signature is traced over, appearing as a faint indentation on the sheet of paper underneath. This indentation can then be used as a guide for a signature.</li>
+                    <br>
+                    <li> Skilled forgery — Produced by a perpetrator that has access to one or more samples of the authentic signature and can imitate it after much practice. Skilled forgery is the most difficult of all forgeries to authenticate.</li>
+                </ol>
+                </p>
+                <img src="https://miro.medium.com/v2/resize:fit:720/0*CSOpSnaOK0BHL__c" style="margin-left:25%;padding-bottom:2em"/>
+                <p>An effective signature verification system must have the ability to detect all these types of forgeries by means of reliable, customized algorithms.</p>
+                  
+            </section>
+           
+            <h2 style="color: #0d0187;font-size: 2.6rem;">Manual verification conundrum:</h2>
+            <p>
+                Because of subjective decision and varies heavily depending on human factors such as expertise, fatigue, mood, working conditions etc manual verification is more error-prone and inconsistent, in the case of Skilled forgery(offline method)leads to following instances:
+                 <br>
+                False Rejection: Flagging transactions fraudulent (when they are not) mistakenly declined, creating a negative impact on customer satisfaction, often called as type-I error.
+                  <br>
+                False Acceptance: Genuine signature and skilled forgery that operator accepted as an authentic signature, leading to financial and reputational loss, often called as type-II error.
+                <br>
+                 <img src="https://miro.medium.com/v2/resize:fit:786/0*8tP5BuM2OMRPEvX7" style="padding:0.89em;margin-left:21%;"/>
+                 <br>
+                 The goal of an accurate verification system to minimize both types of error.The verification process includes evaluating the overall visual appearance of the signature, looking for factors like shape, size, and alignment consistency. Specific details like stroke curvature, crossovers, and relative positioning are also examined. Digital image processing techniques enhance the image by eliminating noise, adjusting contrast, and improving clarity.
+            </p>
+         
+     
+    </div>
+
+
+
+    <!--js bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+     crossorigin="anonymous"></script>
+     <!--js code for img preview and other alterations-->
+     <script>
+      const imageInput = document.getElementById('image-input');
+      const imagePreview = document.getElementById('image-preview');
+  
+      // Event listener for the input field
+      imageInput.addEventListener('change', function(event) {
+        const file = event.target.files[0];
+        
+        imagePreview.style.width = '300px';
+        imagePreview.style.height = '300px';
+        // Check if a file is selected
+        if (file) {
+          const reader = new FileReader();
+  
+          // Read the selected file as a data URL
+          reader.readAsDataURL(file);
+  
+          // Set the preview image source once the file is loaded
+          reader.onload = function() {
+            imagePreview.src = reader.result;
+          };
+        }
+      });
+    </script>
+  </body>
+</html>
